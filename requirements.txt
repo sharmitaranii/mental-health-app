@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit==1.44.1
 pandas==2.2.1
 numpy==1.26.4
@@ -6,3 +7,9 @@ joblib==1.4.2
 matplotlib==3.8.4
 seaborn==0.13.2
 shap==0.45.1
+=======
+streamlit
+pandas
+scikit-learn
+joblib
+>>>>>>> 2ddb871f6f4c74ae96b8bfbacfb958d99e1644f4
