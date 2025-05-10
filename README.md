@@ -1,59 +1,38 @@
-# 🧠 Mental Health Risk Predictor
+# 🧠 Mental Health Treatment Predictor
 
-A Streamlit web app that predicts whether a person working in tech may be at risk of mental health challenges, based on survey inputs.  
-Trained on real industry survey data and optimized for **high recall** to prioritize support over missed cases.
+This is a Streamlit web application that predicts whether a person is likely to seek mental health treatment based on workplace and personal factors. It uses a machine learning model trained on survey data related to mental health in the tech industry.
 
----
+🔗 **Live App**: [Click to view the app](https://mental-health-app-zqzwenvb2crazdbwvc6bon.streamlit.app/)
 
-## 🚀 Live Demo
+## 📊 Project Overview
 
-👉 [Click here to try the app](https://YOUR-STREAMLIT-APP-LINK)  
-_(Replace with your Streamlit Cloud URL after deployment)_
+Mental health is often overlooked in workplace environments, especially in the tech industry. This application helps assess whether a person is likely to seek treatment for mental health issues based on their responses to key personal and work-related questions.
 
----
+## 🚀 Features
 
-## 📊 Project Highlights
+- Interactive form to input personal and work-related factors.
+- Prediction of mental health treatment likelihood.
+- Clean and user-friendly Streamlit interface.
 
-- 🔍 **Goal:** Predict risk of mental health issues in the tech industry
-- ✅ **Pipeline:** Data cleaned, modeled with Random Forest, SHAP analysis, and threshold tuning
-- 🎯 **Threshold-tuned** for real-world recall vs. precision tradeoff
-- ⚙️ **Deployed with Streamlit** for instant browser-based predictions
-
----
-
-## 💻 Tech Stack
+## 🧠 Technologies Used
 
 - Python
-- Streamlit
-- Scikit-learn
 - Pandas
-- SHAP (optional analysis)
-- Git & GitHub
+- scikit-learn
+- joblib
+- Streamlit
 
----
+## 📁 Files
 
-## ✨ Features
+- `app.py`: Main Streamlit app
+- `model.pkl`: Trained machine learning model
+- `model_columns.pkl`: Columns used during model training
+- `requirements.txt`: Python dependencies
+- `README.md`: Project overview
 
-- Interactive user form
-- Tuned probability threshold (not just default 0.5!)
-- Predicts risk of mental health struggles
-- Clean, responsive UI
-- Deployable on [Streamlit Cloud](https://streamlit.io/cloud)
+## ⚙️ How to Run Locally
 
----
-
-## 🧠 Model Overview
-
-- **Model used:** RandomForestClassifier (with `RandomizedSearchCV` tuning)
-- **Best accuracy:** ~83%
-- **Threshold tuned to prioritize recall**
-- **Important features:** work_interfere, family_history, benefits, age
-
----
-
-## 🛠 How to Run Locally
-
-1. **Clone this repo**
+1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/mental-health-app.git
+   git clone https://github.com/sharmitaranii/mental-health-app.git
    cd mental-health-app
