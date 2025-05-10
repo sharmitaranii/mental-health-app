@@ -67,7 +67,7 @@ prediction = model.predict(input_data)[0]
 
 # Show result
 #st.subheader("Prediction Result:")
-#st.write(" Likely to seek treatment" if prediction == "Yes" else " Not likely to seek treatment")
+#st.write(" Likely to seek treatment" if prediction == "Yes" else " Not likely to seek treatment")git init
 
 if st.button("Predict"):
     prediction = model.predict(input_data)[0]
